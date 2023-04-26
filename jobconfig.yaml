@@ -1,0 +1,12 @@
+apiVersion: v2
+actions:
+  - name: "Hello, Botkuber!"
+    events:
+      - name: "sh.keptn.event.remote-task.triggered"
+    tasks:
+      - name: "Say Hello"
+        image: "alpine"
+        cmd:
+          - echo
+        args:
+          - "Hello World"
